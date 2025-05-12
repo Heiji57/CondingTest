@@ -1,5 +1,4 @@
-import java.util.Scanner;
-
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -10,7 +9,6 @@ public class Main {
         for(int i = 3; i <= n; i++) {
             fibonacci[i] = fibonacci[i - 2] + fibonacci[i - 1];
         }
-        System.out.print(fibonacci[n]+ " ");
-        System.out.print(n-2);
+        System.out.print(fibonacci[n]+ " " + (n-2));
     }
 }
